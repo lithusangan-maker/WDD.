@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Vogue - Login</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="auth-page">
+<div class="page">
+  <header class="topbar">
+    <div class="brand">Velvet Vogue</div>
+    <nav class="nav"><a href="login.html" class="active">Login</a><a href="register.html">Register</a></nav>
+    <div class="nav-actions"><a class="icon-link active" href="login.html" aria-label="Login" title="Login">&#128100;</a></div>
+  </header>
+
+  <main class="container">
+    <div class="login-shell">
+      <section class="card login-card">
+        <div class="login-head">
+          <div class="login-brand">Velvet Vogue</div>
+          <h2 class="login-title">Welcome Back</h2>
+          <div class="login-sub">Sign in to continue</div>
+        </div>
+        <div class="auth-tabs">
+          <button class="auth-tab active" data-role="admin" type="button">Admin</button>
+          <button class="auth-tab" data-role="productManager" type="button">Prod Mgr</button>
+          <button class="auth-tab" data-role="customer" type="button">Customer</button>
+        </div>
+
+        <div id="authMsg" class="auth-msg error"></div>
+        <div id="authOk" class="auth-msg success"></div>
+        <div class="auth-note" style="text-align:center;margin-bottom:8px">New user? <a class="auth-link" href="register.html" style="display:inline;margin:0">Create account</a></div>
+
+        <form id="adminForm" class="auth-panel active" autocomplete="off">
+          
+          <input id="adminUser" class="input" placeholder="Username">
+          
+          <div class="password-field">
+            <input id="adminPass" class="input" type="password" placeholder="Password">
+            <button class="pass-toggle" type="button" data-target="adminPass" aria-label="Show password">
+              <svg class="pass-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M1 12C2.73 7.61 6.83 4.5 12 4.5S21.27 7.61 23 12c-1.73 4.39-5.83 7.5-11 7.5S2.73 16.39 1 12Z"></path>
+                <circle cx="12" cy="12" r="3.2"></circle>
+              </svg>
+            </button>
+          </div>
+          <a class="auth-link" href="contact.html">Forgot password?</a>
+          <button class="btn" type="submit">Login as Admin</button>
+          
+        </form>
+
+        <form id="customerForm" class="auth-panel" autocomplete="off">
+          
+          <input id="customerUser" class="input" placeholder="Username">
+          
+          <div class="password-field">
+            <input id="customerPass" class="input" type="password" placeholder="Password">
+            <button class="pass-toggle" type="button" data-target="customerPass" aria-label="Show password">
+              <svg class="pass-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M1 12C2.73 7.61 6.83 4.5 12 4.5S21.27 7.61 23 12c-1.73 4.39-5.83 7.5-11 7.5S2.73 16.39 1 12Z"></path>
+                <circle cx="12" cy="12" r="3.2"></circle>
+              </svg>
+            </button>
+          </div>
+          <a class="auth-link" href="contact.html">Forgot password?</a>
+          <button class="btn" type="submit">Login as Customer</button>
+          
+        </form>
+
+        <form id="productManagerForm" class="auth-panel" autocomplete="off">
+          
+          <input id="productManagerUser" class="input" placeholder="Username">
+          
+          <div class="password-field">
+            <input id="productManagerPass" class="input" type="password" placeholder="Password">
+            <button class="pass-toggle" type="button" data-target="productManagerPass" aria-label="Show password">
+              <svg class="pass-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M1 12C2.73 7.61 6.83 4.5 12 4.5S21.27 7.61 23 12c-1.73 4.39-5.83 7.5-11 7.5S2.73 16.39 1 12Z"></path>
+                <circle cx="12" cy="12" r="3.2"></circle>
+              </svg>
+            </button>
+          </div>
+          <a class="auth-link" href="contact.html">Forgot password?</a>
+          <button class="btn" type="submit">Login as Product Manager</button>
+          
+        </form>
+      </section>
+    </div>
+  </main>
+
+    <footer class="footer">
+    <div class="footer-grid">
+      <section>
+        <h2 class="footer-brand">Velvet Vogue</h2>
+        <h3 class="footer-head">Contact</h3>
+        <p class="footer-line"><strong>Address:</strong> 43 Baily Rd, Batticaloa</p>
+        <p class="footer-line"><strong>Phone:</strong> 0657 572 572</p>
+        <p class="footer-line"><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        <p class="footer-follow">Follow us</p>
+                <div class="footer-social">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M16 8.049c0-4.446-3.582-8.049-8-8.049C3.582 0 0 3.603 0 8.049C0 12.017 2.926 15.307 6.75 15.951V10.377H4.719V8.049H6.75V6.275C6.75 4.257 7.945 3.14 9.772 3.14c.876 0 1.791.157 1.791.157v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.514h2.218l-.354 2.328H9.25v5.574C13.074 15.307 16 12.017 16 8.049z"></path></svg>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X" title="X">
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M12.6.75h2.63L9.484 7.322 16 15.25h-5.098l-3.99-4.807-4.39 4.807H.89l6.13-6.708L.75.75H5.98l3.606 4.346L12.601.75zm-.922 12.94h1.457L5.184 2.23H3.62l8.059 11.46z"></path></svg>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.087 3.269.222 2.76.42a3.89 3.89 0 0 0-1.417.923A3.89 3.89 0 0 0 .42 2.76c-.198.509-.333 1.09-.372 1.943C.01 5.556 0 5.829 0 8c0 2.172.01 2.444.048 3.297.039.854.174 1.434.372 1.943.205.527.478.974.923 1.417.444.445.89.719 1.417.923.509.198 1.09.333 1.943.372C5.556 15.99 5.829 16 8 16c2.172 0 2.444-.01 3.297-.048.854-.039 1.434-.174 1.943-.372a3.89 3.89 0 0 0 1.417-.923 3.89 3.89 0 0 0 .923-1.417c.198-.509.333-1.09.372-1.943C15.99 10.444 16 10.172 16 8c0-2.171-.01-2.444-.048-3.297-.039-.853-.174-1.434-.372-1.943a3.89 3.89 0 0 0-.923-1.417A3.89 3.89 0 0 0 13.24.42c-.509-.198-1.09-.333-1.943-.372C10.444.01 10.172 0 8 0zm0 1.441c2.136 0 2.389.008 3.234.047.781.036 1.204.166 1.486.275.373.145.64.318.92.598.28.28.453.547.598.92.109.282.239.705.275 1.486.038.845.047 1.098.047 3.234 0 2.136-.009 2.389-.047 3.234-.036.781-.166 1.204-.275 1.486a2.45 2.45 0 0 1-.598.92 2.45 2.45 0 0 1-.92.598c-.282.109-.705.239-1.486.275-.845.038-1.098.047-3.234.047-2.136 0-2.389-.009-3.234-.047-.781-.036-1.204-.166-1.486-.275a2.45 2.45 0 0 1-.92-.598 2.45 2.45 0 0 1-.598-.92c-.109-.282-.239-.705-.275-1.486-.038-.845-.047-1.098-.047-3.234 0-2.136.009-2.389.047-3.234.036-.781.166-1.204.275-1.486.145-.373.318-.64.598-.92.28-.28.547-.453.92-.598.282-.109.705-.239 1.486-.275.845-.038 1.098-.047 3.234-.047z"></path><path d="M8 3.892A4.108 4.108 0 1 0 8 12.108 4.108 4.108 0 0 0 8 3.892zm0 6.775A2.667 2.667 0 1 1 8 5.333a2.667 2.667 0 0 1 0 5.334z"></path><path d="M12.271 2.845a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92z"></path></svg>
+          </a>
+          <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" title="Pinterest">
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 0a8 8 0 0 0-2.88 15.46c-.04-.34-.08-.86.02-1.23.09-.34.58-2.2.58-2.2s-.15-.3-.15-.74c0-.7.41-1.23.92-1.23.43 0 .64.32.64.71 0 .43-.27 1.08-.41 1.68-.12.5.25.9.74.9.9 0 1.5-1.15 1.5-2.5 0-1.03-.69-1.8-1.94-1.8-1.42 0-2.3 1.06-2.3 2.24 0 .41.12.7.3.93.09.1.1.14.07.26-.02.08-.08.3-.1.38-.03.12-.13.17-.24.12-.67-.27-.98-1-.98-1.82 0-1.35 1.14-2.98 3.39-2.98 1.81 0 3 1.31 3 2.72 0 1.86-1.03 3.25-2.55 3.25-.51 0-.99-.27-1.15-.58l-.31 1.18c-.11.42-.33.94-.53 1.3A8 8 0 1 0 8 0z"></path></svg>
+          </a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8.051 1.999h.089c.822.003 2.679.03 4.119.162 1.43.13 2.36.309 2.96.83.597.52.82 1.33.93 2.438.112 1.118.112 2.448.112 3.571v.028c0 1.123 0 2.453-.111 3.57-.111 1.109-.333 1.919-.93 2.438-.6.522-1.53.7-2.96.83-1.44.133-3.297.16-4.119.163h-.089c-.822-.003-2.679-.03-4.119-.163-1.43-.13-2.36-.308-2.96-.83-.597-.52-.82-1.329-.93-2.438C.001 11.48 0 10.15 0 9.028V9c0-1.123 0-2.453.111-3.57.111-1.109.333-1.919.93-2.438.6-.522 1.53-.7 2.96-.83C5.372 2.03 7.229 2.003 8.051 2zM6.5 5.5v5l4-2.5-4-2.5z"></path></svg>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="footer-head">About</h3>
+        <nav class="footer-links" aria-label="About links">
+          <a class="footer-link" href="about.html">About Us</a>
+          <a class="footer-link" href="shop.html">Delivery Information</a>
+          <a class="footer-link" href="contact.html">Privacy Policy</a>
+          <a class="footer-link" href="contact.html">Terms &amp; Conditions</a>
+          <a class="footer-link" href="contact.html">Contact Us</a>
+        </nav>
+      </section>
+
+      <section>
+        <h3 class="footer-head">My Account</h3>
+        <nav class="footer-links" aria-label="My account links">
+          <a class="footer-link" href="login.html">Sign In</a>
+          <a class="footer-link" href="cart.html">View Cart</a>
+          <a class="footer-link" href="wishlist.html">My Wishlist</a>
+          <a class="footer-link" href="account.html">Track My Order</a>
+          <a class="footer-link" href="contact.html">Help</a>
+        </nav>
+      </section>
+
+      <section>
+        <h3 class="footer-head">Install App</h3>
+        <p class="footer-note">From App Store or Google Play</p>
+        <div class="store-buttons">
+          <a class="store-btn" href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer" aria-label="Download on App Store">App Store</a>
+          <a class="store-btn" href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">Google Play</a>
+        </div>
+        <p class="footer-note">Secure Payment Gateways</p>
+                <div class="payment-row" aria-label="Payment options">
+          <span class="payment-badge"><img src="../assets/images/payments/visa.svg" alt="Visa"></span>
+          <span class="payment-badge"><img src="../assets/images/payments/mastercard.svg" alt="MasterCard"></span>
+          <span class="payment-badge"><img src="../assets/images/payments/maestro.svg" alt="Maestro"></span>
+          <span class="payment-badge"><img src="../assets/images/payments/amex.svg" alt="American Express"></span>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026, Velvet - Clothing Store</div>
+      <span id="roleFooterText" class="footer-role">-</span>
+    </div>
+  </footer>
+</div>
+
+<div id="loginPopup" class="popup-backdrop" aria-hidden="true">
+  <div class="popup-card" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <div class="popup-head">
+      <h3 class="popup-title" id="popupTitle">Login Success</h3>
+      <span class="popup-badge">Velvet Vogue</span>
+    </div>
+    <div class="popup-body">
+      <p class="muted">Welcome back! Your access is verified.</p>
+      <div class="auth-note">Redirecting to Home...</div>
+    </div>
+    <div class="popup-actions">
+      <button class="btn" id="popupOk" type="button">Continue</button>
+    </div>
+  </div>
+</div>
+
+
+  <script src="../assets/js/pages/login.js"></script>
+</body>
+</html>
+
+
+
+

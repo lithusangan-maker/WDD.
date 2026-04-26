@@ -1,0 +1,65 @@
+.users-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.users-head .muted{margin:0}
+
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:12px}
+
+.stat{padding:12px}
+.stat strong{display:block;font-family:"Playfair Display",serif;font-size:30px;line-height:1;color:#244542}
+
+.users-layout{display:grid;grid-template-columns:1fr 1.3fr;gap:14px;margin-top:14px}
+
+.panel{margin-top:14px;padding:16px}
+.panel.form-panel{margin-top:0}
+
+.pm-form{display:grid;gap:9px}
+.pm-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+
+.alert{display:none;padding:9px 10px;border-radius:10px;font-size:12px}
+.alert.ok{background:#e8f4eb;color:#1a7f37;border:1px solid #c6ead2}
+.alert.err{background:#fdecea;color:#b42318;border:1px solid #f5c2c7}
+
+.user-table{display:grid;gap:8px;margin-top:10px}
+
+.user-row{
+  display:grid;
+  grid-template-columns:1fr 1.2fr .9fr 1fr;
+  gap:8px;
+  align-items:center;
+  padding:10px;
+  border:1px solid #cfddd9;
+  border-radius:10px;
+  background:#fff;
+  font-size:13px;
+}
+
+.user-head{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#607772;background:#edf4f1}
+
+.user-row.clickable{cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.user-row.clickable:hover{background:#f7fcfa;border-color:#b8ccc6}
+.user-row.clickable.selected{background:#f8e1d8;border-color:#e3b8a5}
+
+.profile-view{margin-top:12px;padding:12px;border:1px solid #cfddd9;border-radius:12px;background:#fff}
+.profile-view.empty{border-style:dashed;background:#f5faf8}
+
+.profile-view h3{margin:0 0 8px;font-size:22px;font-family:"Playfair Display",serif;font-weight:700}
+
+.profile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+
+.profile-row{padding:8px 10px;border:1px solid #cfddd9;border-radius:10px;background:#f8fcfa}
+.profile-row .muted{font-size:11px;line-height:1.2;margin:0 0 3px}
+.profile-row strong{font-size:13px;line-height:1.3;word-break:break-word}
+
+.empty-note{padding:12px;border:1px dashed #cfddd9;border-radius:10px;background:#fff}
+
+@media (max-width:980px){
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .users-layout{grid-template-columns:1fr}
+  .user-row{grid-template-columns:1fr}
+  .user-head{display:none}
+  .profile-grid{grid-template-columns:1fr}
+}
+
+@media (max-width:640px){
+  .stats{grid-template-columns:1fr}
+  .pm-grid-2{grid-template-columns:1fr}
+}

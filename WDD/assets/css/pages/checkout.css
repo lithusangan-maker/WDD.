@@ -1,0 +1,32 @@
+.layout { display: grid; grid-template-columns: 1fr 1fr .9fr; gap: 16px; }
+
+.panel { padding: 18px; }
+
+.sum-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--line); color: var(--text); }
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.popup.show { display: flex; }
+
+.popup-card {
+  width: min(420px, 92vw);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  color: var(--text);
+}
+
+.popup-card h3 { margin: 0 0 10px; font-family: "Syne", sans-serif; font-size: 26px; }
+.popup-card p { margin: 0 0 14px; color: var(--muted); }
+
+@media (max-width: 980px) { .layout { grid-template-columns: 1fr; } }

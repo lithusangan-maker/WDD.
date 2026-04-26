@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Product image unavailable">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4fbf8"/>
+      <stop offset="100%" stop-color="#dcebe6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <g fill="none" stroke="#9eb8b0" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <path d="M220 290h360l-40 390H260z"/>
+    <path d="M310 290c0-62 39-96 90-96s90 34 90 96"/>
+  </g>
+  <text x="400" y="760" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#4e6b65" font-weight="700">
+    Velvet Vogue
+  </text>
+  <text x="400" y="812" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#5f7f78">
+    Image updating...
+  </text>
+</svg>
